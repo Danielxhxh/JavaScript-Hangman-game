@@ -1,0 +1,107 @@
+@import url(https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap);
+html,
+body {
+  size: border-box;
+  margin: 0;
+}
+body {
+  width: 30%;
+  margin: 0 auto auto;
+  text-align: center;
+  background-color: #f9f3ee;
+  background-image: url("https://www.pngkey.com/png/full/27-270243_ceiling.png");
+}
+
+img {
+  margin-top: -150px;
+  height: 450px;
+}
+
+h3 {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 1.3em;
+  font-style: italic;
+}
+
+button {
+  color: #fff;
+  width: 40px;
+  height: 40px;
+  margin: 10px;
+  border: #97c4b8;
+  background-color: #97c4b8;
+  border-radius: 20%;
+  box-shadow: 3px 3px #888;
+}
+button:hover {
+  background-color: #448271;
+}
+button:disabled {
+  background-color: #ddede9;
+}
+
+.hidden {
+  display: none;
+}
+
+.game-result {
+  position: absolute;
+  top: 40%;
+  left: 100px;
+  width: 280px;
+  padding: 25px;
+  z-index: 1;
+  color: white;
+  font-size: 1.3em;
+}
+
+.win {
+  background-color: green;
+}
+
+.lose {
+  background-color: red;
+}
+
+.title-author {
+  position: absolute;
+  top: 20%;
+  left: 150px;
+  font-family: "Fira Sans", sans-serif;
+}
+
+#title {
+  font-size: 3em;
+  margin-bottom: -20px;
+}
+
+#wordPlace {
+  font-family: "Fira Sans", sans-serif;
+  font-size: 3em;
+  letter-spacing: 5px;
+}
+
+@media screen and (max-width: 600px) {
+  body {
+    width: 90%;
+    margin: 0 auto auto; /*top left/right bottom*/
+  }
+  img {
+    height: 350px;
+  }
+
+  .title-author {
+    position: relative;
+    left: auto;
+    margin: 0 auto auto;
+    font-family: "Fira Sans", sans-serif;
+  }
+
+  .game-result {
+    position: relative;
+    left: auto;
+    margin: 0 auto auto;
+    padding: 5px;
+    font-size: 1em;
+  }
+}
